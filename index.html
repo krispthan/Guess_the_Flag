@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>What Country is this flag from?</title>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="countries.js"></script>
+
+
+</head>
+
+<body>
+
+    <section id="splash-page" class="active">
+        <div class="buttons-container">
+            <h1 class="country-name">Know Your Flag</h1>
+            <button type="button" class="btn btn-dark" id="start-button">Start Game</button>
+        </div>
+    </section>
+    <div class="guessing-game-body">
+    <section id="main-game">
+        <div class="score-board">
+            <div class="row" id="score-row">
+                <div class="col-lg-3">
+                        <button type="button" class="btn btn-outline-secondary" id="stop-game-button">Stop Game</button>
+                </div>
+                <div class="col-lg-3">
+                        <h6 id="correct-score" class="scores">Correct:<span class="correct-score">0</span></h6>
+                </div>
+                <div class="col-lg-3">
+                        <h6 id="incorrect-score" class="scores">Incorrect:<span class="incorrect-score">0</span></h6>
+                </div>
+                <div class="col-lg-3"> 
+                     <h6 id="score-board" class="scores">Score:<span class="total-score">%</span></h6>
+                </div>
+            </div>
+        </div>
+
+        <div id="fade-header">
+            <h1 class="game-header">What Country is this Flag From?</h1>
+        </div>
+
+
+
+        <div id="image-object">
+
+            <div class="fpicture">
+
+            </div>
+            <div class="country-is-button">
+
+                <button type="button" class="btn btn-secondary" id="hint-country-button"><a target="_blank" href="">Hint</a></button>
+            </div>
+
+
+            <div class="choices-container">
+                    <h2 id="choosing-message">Choose The Correct Answer From the 4 Choices:</h2>
+                <div class="row">
+                    <div class="col-lg-6 choices" id="choice1">
+                        <span></span>A</div>
+                    <div class="col-lg-6 choices" id="choice2">
+                        <span></span>2</div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 choices" id="choice3"> 
+                        <span></span></div>
+                    <div class="col-lg-6 choices" id="choice4">
+                        <span></span></div>
+                </div>
+            </div>
+
+            <h6 id="time-remaining">Time Remaining:<span id="timer"></span></h6>
+
+
+        </div>
+    </section>
+    <div class="display-alert-good">
+        <h3>
+            Congrats, you're heating up!Keep it up!</h3>
+    </div>
+    <div class="display-alert-bad">
+        <h3>Try to stay cool, you got this!</h3>
+    </div>
+</div>
+    <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
